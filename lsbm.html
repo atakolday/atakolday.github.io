@@ -47,22 +47,22 @@
           <h1 class="title is-1 publication-title">Large-scale Deep Neural Network Benchmarking for Dynamic Social Vision</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <strong>Kathy Garcia</strong><sup>1*</sup>,</span>&nbsp;
+              <strong>Kathy Garcia</strong><sup>*</sup>,</span>&nbsp;
             <span class="author-block">
-              <a href="https://colinconwell.github.io">Colin Conwell</a><sup>1</sup>,</span>&nbsp;
+              <a href="https://colinconwell.github.io">Colin Conwell</a>,</span>&nbsp;
             <span class="author-block">
-              <a href="https://emaliemcmahon.github.io">Emalie McMahon</a><sup>1</sup>,&nbsp;
+              <a href="https://emaliemcmahon.github.io">Emalie McMahon</a>,&nbsp;
             </span>
             <span class="author-block">
-              <a href="https://bonnerlab.org">Michael F. Bonner</a><sup>1</sup>,&nbsp;
+              <a href="https://bonnerlab.org">Michael F. Bonner</a>,&nbsp;
             </span><br>
             <span class="author-block">
-              <a href="https://www.isiklab.org">Leyla Isik</a><sup>1</sup>,&nbsp;
+              <a href="https://www.isiklab.org">Leyla Isik</a>&nbsp;
             </span> 
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Department of Cognitive Science, Johns Hopkins University</span>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">Department of Cognitive Science, Johns Hopkins University</span>
           </div>
         </div>
       </div>
@@ -101,10 +101,10 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" style="white-space: nowrap;">Visual Sentences Enable Unified Visual Data Format.</h2>
+        <h2 class="title is-3" style="white-space: nowrap;">Social Interaction Perception in the Brain</h2>
         <div class="content has-text-justified">
-          <img src="static/images/figure1_final.jpg" alt="Visual Sentences">
-          <p class="caption"><b>Figure 1. Visual Sentence</b> allow us to format diverse vision data into the unified structure of image sequences.</p>
+          <img src="static/figures/fig1.png" alt="Fig1" width="400" height="400">
+          <p class="caption"><b>Figure 1:</b> Lateral Stream and the Ventral Stream.</p>
         </div>
         <br><br>
       </div>
@@ -112,15 +112,17 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">LVM Shows Scalability Across Model and Data Size.</h2>
+        <h2 class="title is-3">Methodological Overview</h2>
         <div class="content has-text-justified">
           <div style="text-align: center;">
-            <img src="static/images/training_loss_plot.jpg" alt="Scalability Part 1" width="400" height="400">
-            <!-- <p class="caption"><b>Figure 2. Training loss for the 300M, 600M, 1B, and 3B models.</b> All models are trained on 420B tokens, which correspond to 1.64B images. The training scales well with model sizes.</p> -->
-            <p class="caption" style="width: 100%; text-align: center;"><b>Figure 2. Training loss for the 300M, 600M, 1B, and 3B models.</b> All models are trained on 420B tokens, which correspond to 1.64B images. The training scales well with model sizes.</p>
+            <img src="static/figures/fig2.png" alt="Methods Overview">
 
-            <!-- <p class="total-caption" style="width: 100%; text-align: center;"><b>Total Caption:</b> ThisThisThisThisThisThisThisThisThisThis is the total caption for all four images.</p> -->
-
+            <p class="caption" style="width: 100%; text-align: center;"><b>Figure 2: From left to right -</b> Participants watch 3 sec naturalistic, social videos and collection of behavioral ratings of videos on predefined social interaction dimensions. 
+              Diverse range of DNN models and extraction of their feature activation in response to video stimuli (bottom). Next, these features are then structured into representational dissimilarity matrices (RDMs) by computing pairwise Pearson 
+              correlation distances across all pairs of stimuli (middle). ROI identification within the brain's lateral and ventral stream followed after standard preprocessing pipeline using GLM (top). The resultant RDMS for each model layer are 
+              compared against the neural RDMS derived from fMRI data (top), indicating the similarity between the model's representation of the stimuli and brain's response patterns. The veRSA approach (bottom, end) builds on the cRSA framework 
+              by incorporating a voxel-wise predictive modeling step (middle, bottom) by fitting the model features to the brain data using ridge regression. Predicted brain responses are then converted to RDMs, using Pearson correlation distances. 
+              These predicted RDMs are compared to the neural RDM to compute a weighted correlation score that reflects the model's predictive accuracy at the voxel level.</p>
           </div>
 
 
