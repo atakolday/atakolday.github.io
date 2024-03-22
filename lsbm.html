@@ -121,54 +121,29 @@
               correlation distances across all pairs of stimuli (middle). ROI identification within the brain's lateral and ventral stream followed after standard preprocessing pipeline using GLM (top). The resultant RDMS for each model layer are 
               compared against the neural RDMS derived from fMRI data (top), indicating the similarity between the model's representation of the stimuli and brain's response patterns. The veRSA approach (bottom, end) builds on the cRSA framework 
               by incorporating a voxel-wise predictive modeling step (middle, bottom) by fitting the model features to the brain data using ridge regression. Predicted brain responses are then converted to RDMs, using Pearson correlation distances. 
-              These predicted RDMs are compared to the neural RDM to compute a weighted correlation score that reflects the model's predictive accuracy at the voxel level.</p>
-          </div>
-
-
-          <style>
-  
-          
-          .image-container {
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: space-between; 
-          }
-
-          .image {
-            flex: 1; 
-            margin: 10px;
-            max-width: calc(25% - 20px); 
-          }
-
-          .image img {
-            width: 150%; 
-            height: auto;
-          }
-
-          .caption {
-        width: 80%; /* Adjust the width as needed */
-        margin: 10px auto; /* Centers the caption and adds space above */
-        text-align: center;
-    }
-          </style>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3" style="white-space: nowrap;">Similarity of DNN with Social Features in Visual Scenes</h2>
-            <div class="content has-text-justified">
-              <img src="static/figures/fig3.png" alt="Fig3" style="display: block; margin-left: auto; margin-right: auto;">
-              <p class="caption"><b>Figure 3: Correlation Between AlexNet Layers and Behavioral Ratings</b> - Correlations based on cRSA between each convolutional layer of AlexNet and two behavioral ratings: <b>Expanse(left)</b> and <b>Communication (right)</b>. 
-                Bar height represents the Spearman correlation coefficient for each layer, numbered 1 through 5 along the horizontal axis, indicating the sequence of the convolutional layers from input to output within the network. Blue bars indicate 
-                statistically significant correlations (<em>p</em> &lt; 0.05 based on permutation test). Gray bars signify statistically insignificant results. </p>
-            </div>
-            <br><br>
+              These predicted RDMs are compared to the neural RDM to compute a weighted correlation score that reflects the model's predictive accuracy at the voxel level. <br><br><br></p>
           </div>
         </div>
+      </div>
+    </div>  
 
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Similarity of DNN with Social Features in Visual Scenes</h2>
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <img src="static/figures/fig3.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <p class="caption"><b>Figure 3: Correlation Between AlexNet Layers and Behavioral Ratings</b> - Correlations based on cRSA between each convolutional layer of AlexNet and two behavioral ratings: <b>Expanse(left)</b> and <b>Communication (right)</b>. 
+              Bar height represents the Spearman correlation coefficient for each layer, numbered 1 through 5 along the horizontal axis, indicating the sequence of the convolutional layers from input to output within the network. Blue bars indicate 
+              statistically significant correlations (<em>p</em> &lt; 0.05 based on permutation test). Gray bars signify statistically insignificant results. </p>
+          </div>
         </div>
+      </div>
+    </div>  
 
 
-
+    
   </div>
 </section>
 
