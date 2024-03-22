@@ -102,8 +102,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3" style="white-space: nowrap;">Social Interaction Perception in the Brain</h2>
         <div class="content has-text-justified">
-          <img src="static/figures/fig1.png" alt="Fig1" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="400">
-          <p class="caption"><b>Figure 1:</b> Lateral Stream and the Ventral Stream.</p>
+          <div style="text-align: center;">
+            <img src="static/figures/fig1.png" alt="Fig1" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="400">
+            <p class="caption"><b>Figure 1:</b> Lateral Stream and the Ventral Stream.</p>
+          </div>
         </div>
         <br><br>
       </div>
@@ -157,11 +159,67 @@
             <img src="static/figures/fig4f.png" style="display: block; margin-left: auto; margin-right: auto;">
             <img src="static/figures/fig4g.png" style="display: block; margin-left: auto; margin-right: auto;">
             <img src="static/figures/fig4h.png" style="display: block; margin-left: auto; margin-right: auto;">
-
+            <br>
             <p class="caption"><b>Figure 4: veRSA ROI correlation with different DNN architectures</b> - veRSA results for each ROI, including: (a) early visual cortex (EVC), (b) middle temporal area (MT), (c) extrastriate body area (EBA), 
               (d) lateral occipital complex (LOC), (e) posterior superior temporal sulcus (PSTS), (f) anterior superior temporal sulcus (ASTS), (g) parahippocampal place area (PPA), and (h) fusiform face area (FFA). The data points represent 
               individual DNN models. The color coding of these points denotes the architecture type of each DNN model. The shape of the data points indicates the type of training each model has undergone. The gray bars across the graphs establish 
               the lower and upper bounds of split-half reliability. </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overall DNN-Brain Correspondence in the Lateral and Ventral ROIs</h2>
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <br>
+            <img src="static/figures/fig5.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <p class="caption"><b>Figure 5: cRSA Correlation DNNs vs. ROIs</b> - The figure presents the overall correlation between DNNs and for lateral and ventral ROIs using classic RSA. The Spearman r correlation values, indicating the strength of the 
+              relationship between DNN model features and neural activity, are plotted for different brain regions within both the lateral and ventral streams. Each data point represents the cRSA Spearman r correlation for a specific DNN model within a particular 
+              Region of Interest (ROI). The colors of the dots correspond to the architectural type of the DNNs: blue for convolutional, orange for transformer, green for hybrid, and red for mixer. The black line across the plot indicates the average correlation 
+              across all DNNs for each ROI, providing a visual summary of the overall trend. From left to right, the ROIs within the lateral stream include the Early Visual Cortex (EVC), Middle Temporal area (MT), Lateral Occipital complex (LOC), 
+              Extrastriate Body Area (EBA), Posterior Superior Temporal Sulcus (PSTS), and Anterior Superior Temporal Sulcus (ASTS). For the ventral stream, the Parahippocampal Place Area (PPA) and Fusiform Face Area (FFA) are shown. </p>
+            
+            <br>
+            <img src="static/figures/fig6.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <p class="caption"><b>Figure 6: veRSA Across Diverse DNN Architectures</b> - This figure illustrates the results from a voxel encoding Representational Similarity Analysis (veRSA) applied to the same DNNs in Figure 4. 
+              Plotting conventions follow those in Figure 5. </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Hierarchical Correspondence in the Lateral Stream</h2>
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <br>
+            <img src="static/figures/fig7.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <p class="caption"><b>Figure 7: DNN Layers and Brain ROIs</b> - These panels illustrate the relationship between the depth of the best fitting layer within various DNNs and specific brain ROIs in the lateral and ventral visual streams. 
+              The layer depth ranges from 0, representing the first layer of the DNN, to 1, denoting the last layer. The individual data points, color-coded by Architecture Type, indicate the normalized depth of the layer that best matches the activation 
+              pattern for each ROI. The black line represents the mean layer depth across all models for each ROI, providing a visual summary of the average hierarchical correspondence. The division of ROIs into Lateral and Ventral Streams facilitates a 
+              comparison of hierarchical processing patterns across these distinct pathways. </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">What's next?.. Image Size Tranformations on Hierarchical Representations!</h2>
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <br>
+            <img src="static/figures/fig8.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <p class="caption"><b>Figure 8: Effect of transforming input images during model feature extraction</b> - This figure illustrates the results from a voxel encoding Representational Similarity Analysis (veRSA) applied to both CLIP RN50 and AlexNet. 
+              The two lines represent the results when transformations to the input images were applied vs no transformations (Standacrd). Follows the same plotting conventions as figure 6 and 7b, respectively. </p>
           </div>
         </div>
       </div>
