@@ -37,78 +37,32 @@
     </a>
   </div>
 </nav>
-
+        
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-widescreen">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Sequential Modeling Enables Scalable Learning for <br> Large Vision Models</h1>
+          <h1 class="title is-1 publication-title">Large-scale Deep Neural Network Benchmarking for Dynamic Social Vision</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://yutongbai.com/">Yutong Bai</a><sup>1,2,*</sup>,</span>&nbsp;
+              <strong>Kathy Garcia</strong><sup>1*</sup>,</span>&nbsp;
             <span class="author-block">
-              <a href="https://young-geng.xyz/">Xinyang Geng</a><sup>1,*</sup>,</span>&nbsp;
+              <a href="https://colinconwell.github.io">Colin Conwell</a><sup>1</sup>,</span>&nbsp;
             <span class="author-block">
-              <a href="https://karttikeya.github.io/">Karttikeya Mangalam</a><sup>1</sup>,&nbsp;
+              <a href="https://emaliemcmahon.github.io">Emalie McMahon</a><sup>1</sup>,&nbsp;
             </span>
             <span class="author-block">
-              <a href="https://www.amirbar.net/">Amir Bar</a><sup>1</sup>,&nbsp;
+              <a href="https://bonnerlab.org">Michael F. Bonner</a><sup>1</sup>,&nbsp;
             </span><br>
             <span class="author-block">
-              <a href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille</a><sup>2</sup>,&nbsp;
+              <a href="https://www.isiklab.org">Leyla Isik</a><sup>1</sup>,&nbsp;
             </span> 
-            <span class="author-block">
-              <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a><sup>1</sup>,&nbsp;
-            </span>
-            <span class="author-block">
-              <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a><sup>1</sup>,&nbsp;
-            </span>
-            <span class="author-block">
-              <a href="https://people.eecs.berkeley.edu/~efros/">Alexei A Efros</a><sup>1</sup>
-            </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>UC berkeley (BAIR), </span>&nbsp;&nbsp;
-            <span class="author-block"><sup>2</sup>Johns Hopkins University</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2312.00785"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/ytongbai/LVM"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/ytongbai/LVM"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-            </div>
-
+            <span class="author-block"><sup>1</sup>Department of Cognitive Science, Johns Hopkins University</span>
           </div>
         </div>
       </div>
@@ -128,11 +82,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce a novel sequential modeling approach which enables learning a Large Vision Model (<b>LVM</b>) without making use of any linguistic data. <br>
-            To do this, we define a common format, "visual sentences", in which we can represent raw images and videos as well as annotated data sources such as semantic segmentations and depth reconstructions without needing any meta-knowledge beyond the pixels.<br>
-            Once this wide variety of visual data (420 billion tokens) is represented as sequences, the model can be trained to minimize cross-entropy loss for next token prediction. <br>
-            By training across various scales of model architecture and data diversity, we provide empirical evidence that our models scale effectively. 
-            Many different vision tasks can be solved by designing suitable prompts at test time.<br><br><br><br>
+            Many Deep Neural Networks (DNNs) with diverse architectures and learning objectives have yielded high brain similarity and hierarchical correspondence to ventral stream responses to static images. 
+            However, they have not been evaluated on dynamic social scenes, which are thought to be processed primarily in the recently proposed lateral visual stream. Here, we ask whether DNNs are similarly good 
+            models of processing in the lateral stream and superior temporal sulcus as they are of the ventral stream. To investigate this, we employ large-scale deep neural network benchmarking against fMRI responses 
+            to a curated dataset of 200 naturalistic social videos. We examine over 300 DNNs with diverse architectures, objectives, and training sets. Notably, we find a hierarchical correspondence between DNNs and lateral 
+            stream responses: earlier DNN layers correlate better with earlier visual areas (including early visual cortex and middle temporal cortex), middle layers match best with mid-level regions (extrastriate body area 
+            and lateral occipital cortex), and finally later layers in the most anterior regions (along the superior temporal sulcus). Pairwise permutation tests further confirm significant differences in average depth of the best 
+            layer match between each region of interest. Interestingly, we find no systematic differences between diverse network types in terms of either hierarchical correspondence or absolute correlation with neural data, 
+            suggesting drastically different network factors (like learning objective and training dataset) play little role in a network's representational match to the lateral stream. Finally, while the best DNNs provided a 
+            representational match to ventral stream responses near the level of the noise ceiling, DNN correlations were significantly lower in all lateral stream regions. Together, these results provide evidence for a 
+            feed-forward visual hierarchy in the lateral stream and underscore the need for further refinement in computational models to adeptly capture the nuances of dynamic, social visual processing.<br><br><br><br>
           </p>
         </div>
       </div>
