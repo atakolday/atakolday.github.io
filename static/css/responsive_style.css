@@ -1,0 +1,24 @@
+img.responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+@media (min-width: 768px) {
+    img.responsive {
+      width: 110%;
+      margin-left: -5%;
+      margin-right: -5%;
+    }
+  }
+  
+@media (min-width: 1024px) {
+    img.responsive {
+      width: 120%;
+      margin-left: -10%;
+      margin-right: -10%;
+    }
+  }
+  
