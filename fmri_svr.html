@@ -107,7 +107,7 @@
             symptoms of anxiety and depression on 209 subjects enrolled in the study for risk for anxiety and depression. We trained the SVR classifier on fMRI data collected during the well-established Monetary Incentive Delay 
             (MID) task, which is a widely used task to measure neural activity in response to reward and loss in healthy and clinical populations. The MID datasets were preprocessed into multi-dimensional feature space using a 
             264 regions of interest (ROI) mask, and the model was fit using ten fold cross validation on all 264 dimensions in order to identify patterns of activation associated with dimensional symptoms of depression and anxiety. 
-            We demonstrate MID task-fMRI data is not an accurate predictor of dimensional clinical symptoms. The results predicted dimensional symptoms with R2 values ranging from -0.269 to -0.658 indicating poor model fit compared 
+            We demonstrate MID task-fMRI data is not an accurate predictor of dimensional clinical symptoms. The results predicted dimensional symptoms with R<sup>2</sup> values ranging from -0.269 to -0.658 indicating poor model fit compared 
             to a horizontal line fit denoting a null effect. The poor model fit of linear models reported in this study suggests that a non-reliable linear relationship between reward-related neural activation and dimensional clinical 
             symptoms related to the experience of depression and anxiety. Future analysis will explor additional non-linear modeling methods and clustering to further explore the relationship between reward-related brain activation 
             and dimensional symptoms.<br><br><br><br>
@@ -127,7 +127,7 @@
               <br>
               <p class="caption"><em>Left to right: </em> 1. Screen for healthy adults/demographics, 2. Assessment questionnaires for Tri-level symptoms, 3. Standardized z-scores are calculated from questionnaires, 
                 4. Produce MID Task FMRI contrast images, 5.Transform data into 264 dimensions using a 264 ROI atlas, 6. Data is split into 20% training and 80% testing data, 7. Support Vector Regression model is fit on training data, 
-                8. SVR Model is cross validated using 10 fold cross validation, 9. RMSE and r2 scores are calculated for each combination of contrast and tri-level symptom. </p>
+                8. SVR Model is cross validated using 10 fold cross validation, 9. RMSE and R<sup>2</sup> scores are calculated for each combination of contrast and tri-level symptom. </p>
             </div>
           </div>
           <br><br>
@@ -179,9 +179,9 @@
                 between reward-related neural activation and dimensional clinical symptoms. <br>
                 <b>Underfitting:</b> Due to the high dimensionality of the data, noise and unrelated brain activation, model is underfitting.<br><br> </p>
               <img src="static/figures/proj2_fig5.png" style="display: block; margin-left: auto; margin-right: auto;">  
-              <p class="caption"> <b>R-squared and root mean squared errors (RMSE):</b> 12 tests were performed with the Cross-folded SVR model. RMSE and r2 values were calculated for each of the 10 
+              <p class="caption"> <b>R-squared and root mean squared errors (RMSE):</b> 12 tests were performed with the Cross-folded SVR model. RMSE and R<sup>2</sup> values were calculated for each of the 10 
                 folds and mean averaged to produce a final goodness of fit metric. <br>
-                r2 values range from -4.24 to -0.65 for whole brain tests and slightly improve with fewer dimensions, -1.69 to -0.46 for only one feature deduced from the best p-value correlation across all ROIs.
+                R<sup>2</sup> values range from -4.24 to -0.65 for whole brain tests and slightly improve with fewer dimensions, -1.69 to -0.46 for only one feature deduced from the best p-value correlation across all ROIs.
             </p>
             </div>
           </div>
