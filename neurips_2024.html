@@ -178,15 +178,137 @@
           <div class="content has-text-justified">
             <div style="text-align: center;">
               <br>
-              <img src="static/figures/neurips/neurips_fig5.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <img src="static/figures/neurips/neurips_fig5.jpeg" style="display: block; margin-left: auto; margin-right: auto;">
               <br>
               <p class="caption"><b>Figure 5: Test set encoding performance. </b>Visualization of the test set encoding performance of the best performing layer in the training set for each voxel from any (A) image, 
-                (B) video, and (C) language model. This is shown on the lateral and ventral surface in right hemisphere of one representative participant.
+                (B) video, and (C) language model. This is shown on the lateral and ventral surface in right hemisphere of one representative participant. </p>
             </div>
           </div>
           <br><br>
         </div>
       </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Hierarchical Alignment Between Models and Brains</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig6.jpeg" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 6: Whole-brain hierarchical alignment. </b>Relative depth of the best performing model layer across all vision models (image and video models) 
+                in the whole brain of one representative subject. </p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Performance Difference by Architecture</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig7.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 7: Model performance by architecture.</b> We evaluate the impact of model architecture (convo- lutional vs. transformer) on the prediction 
+                of human ratings. Each dot represents the best fitting layer of a model, with solid bars denoting mean encoding score for a given cluster per behavioral rating. In gray 
+                bars, we plot the reliability as a noise ceiling for our data. The graph shows that architectural differences do not significantly impact the models' predictive capabilities 
+                for the tasks studied.</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Performance Difference by Learning Objective</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig8.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 8: Model performance by learning objective. </b>Here, we compare the predictive performance of models trained under different learning 
+                objectives (supervised vs. self-supervised) across behavioral ratings. To control for model architecture we select only ResNet50 based models. Each dot represents 
+                the best fitting layer of a model, with solid bars denoting mean encoding score for a given cluster per behavioral rating. In gray bars, we plot the reliability as 
+                a noise ceiling for our data. This analysis indicates whether the learning objective influences behavior-model alignment.</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Language Model Performance Differences Based On Selective Perturbation Across Brain ROIs</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig9.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 9: The average performance in ROIs of each language model (dots) in predicting neural responses following selective 
+                perturbation of the sentence captions. </b>The bars indicate the mean performance across models for each condition and rating. Asterisks indicate 
+                that there is a significant degradation in model-neural alignment following perturbation relative to the unperturbed sentence.</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Hierarchical Alignment of Model Layers with Brain ROIs</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig10.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 10: Hierarchical alignment of model layers with brain responses.</b> We calculate the relative layer depth of the best performing 
+                layer per model in each lateral stream ROI. On the y-axis, 0 represents the input model layer and 1 represents the output layer. The graph shows the relative 
+                prediction strength of model layers for each ROI, suggesting a lack of hierarchical alignment in lateral visual regions.</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Performance by Architecture Across Brain ROIs</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig11.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 11: Model performance by architecture across ROIs. </b>We compare the performances of convolutional and transformer architectures in 
+                predicting neural responses across various brain regions. Each dot represents the best fitting layer of a model, with solid bars denoting mean encoding score for 
+                a given cluster per ROI. The graph shows that architectural differences do not significantly impact the models' predictive capabilities for both ventral and lateral ROIs.</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Performance by Learning Objective Across Brain ROIs</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig12.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 11: Model performance by learning objective across ROIs. </b>Here, we evaluate the impact of training objectives (supervised vs. self-supervised) 
+                on predicting neural responses across different brain regions. To control for model architecture we select only ResNet50 based models. Each dot represents the best fitting 
+                layer of a model, with solid bars denoting mean encoding score for a given cluster per ROI. This analysis illustrates that differences in training objective do not significantly 
+                impact the models' predictive capabilities for both ventral and lateral ROIs.</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+      
 
   </div>
 </section>
