@@ -60,10 +60,10 @@
               <a href="https://www.isiklab.org">Leyla Isik</a>&nbsp;
             </span> 
           </div>
-          <br>
           <div class="is-size-6 contributions">
             <span class="author-block">*authors contributed equally</span>
           </div>
+          <br>
           <div class="is-size-4 publication-authors">
             <span class="author-block">Johns Hopkins University</span>
           </div>
@@ -129,14 +129,64 @@
             <br>
             <p class="caption"><b>Figure 2: Prediction performance of all models in predicting behavioral responses. </b> Each dot is the performance of a single model. The lines indicate the mean 
                 performance for image (pink), video (green), and language (blue) models. The horizontal gray lines are the inter-subject agreement, which is approximately the maximal level that any 
-                model could be expected to perform. Brackets and asterisks indicate significantly different performance between different classes of models (p &lt; 0.05: *, p &lt; 0.01: **, p &lt; 0.001: ***). </p>
+                model could be expected to perform. Brackets and asterisks indicate significantly different performance between different classes of models. &nbsp;
+                (<em>p</em> &lt; 0.05: *, <em>p</em> &lt; 0.01: **, <em>p</em> &lt; 0.001: ***) </p>
           </div>
         </div>
         <br><br>
       </div>
     </div>  
 
-    
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Human-Language Model Alignment</h2>
+          <br>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <img src="static/figures/neurips/neurips_fig3.jpeg" alt="Methods Overview">
+              <br>
+              <p class="caption" style="width: 100%; text-align: center;"><b>Figure 3: (A) Example sentence perturbations. (B) The performance of each language model (dots) in predicting human behavioral 
+                ratings following selective perturbation of the sentence captions.</b> The bars indicate the mean performance across models for each condition and rating. Asterisks indicate that there is a 
+                significant degradation in model-behavioral alignment following perturbation relative to the unperturbed sentence.<br><br><br></p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>  
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Model Performances Across Brain ROIs</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig4.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 4: The performance of each model (dots) in predicting the average response in each ROI.</b> The colored lines indicate the mean performance of the different classes of models, 
+                and the horizontal gray line is the split-half reliability of the voxel responses in each ROI averaged across participants. Brackets and asterisks indicate significantly different performance between 
+                different classes of models. &nbsp;
+                (<em>p</em> &lt; 0.05: *, <em>p</em> &lt; 0.01: **, <em>p</em> &lt; 0.001: ***) </p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Vision Models Capture Neural Responses Better Than Language Models</h2>
+          <div class="content has-text-justified">
+            <div style="text-align: center;">
+              <br>
+              <img src="static/figures/neurips/neurips_fig5.png" style="display: block; margin-left: auto; margin-right: auto;">
+              <br>
+              <p class="caption"><b>Figure 5: Test set encoding performance. </b>Visualization of the test set encoding performance of the best performing layer in the training set for each voxel from any (A) image, 
+                (B) video, and (C) language model. This is shown on the lateral and ventral surface in right hemisphere of one representative participant.
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
 
   </div>
 </section>
